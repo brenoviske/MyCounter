@@ -1,34 +1,35 @@
 body { 
-    background-color: white;
+    padding: 0;
+    background-color: rgb(236, 233, 233);
+    margin: 0;
 }
 
 
 #counterLabel {
     display: block;
     text-align: center;
-    font-size: 10em;
+    font-size: 60px;
     font-weight: bold;
+    color: rgb(231, 6, 6);
+    text-shadow: 4px 4px black;
 }
 
-.flexcontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 10px;
-
+#gridcontainer{
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    column-gap: 5px;
+    padding-left: 300px;
 }
 
-.buttons {
+.buttons{
+    background: linear-gradient(red,rgb(128, 6, 6));
+    font-family: system-ui;
+    font-size: 25px;
+    font-weight: bold;
     color: white;
-    background-color: rgb(139, 139, 238);
-    font-size: 1.5em;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.button:hover{
-    background-color: #3434d6;
+    text-shadow: 3px black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px black;
+    cursor:pointer;
 }
