@@ -5,18 +5,21 @@ const increasebutton = document.getElementById('increasebutton')
 const counterlabel = document.getElementById('counterlabel')
 
 
-increasebutton.onclick = function(){
-    count ++;
-    counterlabel.textContent = count
-
+decreasebutton.onclick = function(){
+    count--;
+    Updatedisplay()
 }
 
 resetbutton.onclick = function(){
-    count = 0
-    counterlabel.textContent = count
+    count = 0;
+    Updatedisplay()
 }
 
-decreasebutton.onclick = function(){
-    count --;
+increasebutton.onclick = function(){
+    count ++;
+    Updatedisplay()
+}
+
+function Updatedisplay (){
     counterlabel.textContent = count
 }
