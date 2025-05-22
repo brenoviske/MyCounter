@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to right,rgb(0, 187, 255),rgb(3, 229, 101));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #counterlabel {
@@ -40,3 +44,17 @@ body {
 .buttons:hover{
     background-color: rgb(156, 153, 153);
 }
+
+@media (max-width: 2880px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right,rgb(0,187,235),rgb(3,229,101));
+    }
+
+    #gridcontainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+}   
