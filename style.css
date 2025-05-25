@@ -22,11 +22,11 @@ body {
 
 #gridcontainer {
 
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    place-items: center;
-    margin-right: 600px;
-    margin-left: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .buttons{
