@@ -45,16 +45,27 @@ body {
     background-color: rgb(156, 153, 153);
 }
 
-@media (max-width: 2880px) {
-    body {
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(to right,rgb(0,187,235),rgb(3,229,101));
+
+
+/* Mobiles */
+
+@media screen and (max-width:430px){
+    #counterlabel {
+        font-size: 50px;
+    }
+    .buttons {
+        font-size: 20px;
+    }
+}
+
+/* Para Ipads e Tablets */
+
+@media screen and ( min-width:440px) and (max-width:1080px){
+    .buttons{
+        font-size: 50px;
     }
 
-    #gridcontainer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        place-items: center;
+    #counterlabel {
+        font-size: 70px;
     }
-}   
+}
